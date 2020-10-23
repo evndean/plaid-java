@@ -159,6 +159,10 @@ public interface PlaidApiService {
   Call<SandboxItemSetVerificationStatusResponse> sandboxItemSetVerificationStatus(
     @Body SandboxItemSetVerificationStatusRequest request);
 
+  @POST("/sandbox/processor_token/create")
+  Call<SandboxProcessorTokenCreateResponse> sandboxProcessorTokenCreate(
+    @Body SandboxProcessorTokenCreateRequest request);
+
   @POST("/sandbox/public_token/create")
   Call<SandboxPublicTokenCreateResponse> sandboxPublicTokenCreate(
     @Body SandboxPublicTokenCreateRequest request);
